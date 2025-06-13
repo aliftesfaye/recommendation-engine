@@ -1,0 +1,210 @@
+Metadata-Version: 2.4
+Name: hybrid_recommender
+Version: 0.1.0
+Summary: A hybrid recommendation engine combining multiple approaches
+Home-page: https://github.com/yourusername/hybrid-recommender
+Author: Your Name
+Author-email: your.email@example.com
+Keywords: recommender-systems machine-learning hybrid-recommendations
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: pandas>=2.1.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: scipy>=1.11.0
+Requires-Dist: implicit>=0.7.0
+Requires-Dist: tensorflow>=2.15.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Provides-Extra: notebook
+Requires-Dist: jupyter>=1.0.0; extra == "notebook"
+Requires-Dist: notebook>=6.0.0; extra == "notebook"
+Requires-Dist: matplotlib>=3.5.0; extra == "notebook"
+Requires-Dist: seaborn>=0.11.0; extra == "notebook"
+Requires-Dist: ipywidgets>=7.0.0; extra == "notebook"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Hybrid Recommendation Engine
+
+A sophisticated recommendation engine that combines collaborative filtering and implicit feedback approaches to provide accurate and diverse recommendations. This implementation uses state-of-the-art libraries to create a hybrid system that leverages the strengths of different recommendation techniques.
+
+## Features
+
+- **Multiple Recommendation Approaches**:
+  - Collaborative Filtering (using Surprise)
+    - Matrix Factorization with SVD
+    - Explicit feedback handling
+    - Rating prediction
+  - Implicit Feedback (using Implicit)
+    - Alternating Least Squares (ALS)
+    - Implicit preference modeling
+    - Fast computation for large datasets
+  
+- **Hybrid Approach Benefits**:
+  - Better accuracy through ensemble methods
+  - Handles both explicit and implicit feedback
+  - Configurable weights for each approach
+  - Scalable implementation
+
+- **Professional Project Structure**:
+  - Modular and maintainable code
+  - Comprehensive test suite
+  - Type hints and documentation
+  - Configuration management
+  - Example implementations
+  - Interactive Jupyter notebook tutorial
+
+## Project Structure
+
+```
+hybrid-recommender/
+â”œâ”€â”€ src/
+â”‚   â””â”€â”€ hybrid_recommender/
+â”‚       â”œâ”€â”€ __init__.py
+â”‚       â”œâ”€â”€ recommender.py
+â”‚       â””â”€â”€ config.py
+â”œâ”€â”€ tests/
+â”‚   â””â”€â”€ test_recommender.py
+â”œâ”€â”€ examples/
+â”‚   â””â”€â”€ basic_usage.py
+â”œâ”€â”€ notebooks/
+â”‚   â””â”€â”€ recommender_tutorial.ipynb
+â”œâ”€â”€ setup.py
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ README.md
+```
+
+## Installation
+
+1. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install the package:
+```bash
+pip install -e .
+```
+
+3. For Jupyter notebook tutorial:
+```bash
+pip install -e ".[notebook]"
+jupyter notebook notebooks/recommender_tutorial.ipynb
+```
+
+## Quick Start
+
+```python
+from hybrid_recommender import AdvancedHybridRecommender, RecommenderConfig
+
+# Create a recommender with custom configuration
+config = RecommenderConfig(
+    method='all',
+    weights={
+        'surprise': 0.6,
+        'implicit': 0.4
+    }
+)
+
+# Initialize and train the recommender
+recommender = AdvancedHybridRecommender(config)
+recommender.fit(
+    user_item_matrix=user_item_matrix,
+    user_ids=user_ids,
+    item_ids=item_ids
+)
+
+# Get recommendations
+recommendations = recommender.recommend_items('user1', n_recommendations=5)
+```
+
+## Interactive Tutorial
+
+We provide a comprehensive Jupyter notebook tutorial that demonstrates:
+- Detailed usage examples
+- Data preparation and visualization
+- Different configuration options
+- Performance analysis and evaluation
+- Recommendation diversity analysis
+
+To run the tutorial:
+1. Install notebook dependencies: `pip install -e ".[notebook]"`
+2. Start Jupyter: `jupyter notebook notebooks/recommender_tutorial.ipynb`
+
+## Configuration
+
+The `RecommenderConfig` class allows you to customize:
+- Which recommendation methods to use
+- Weights for each method in the ensemble
+- Parameters for each underlying model
+- Rating scales and other system parameters
+
+Example configuration:
+```python
+config = RecommenderConfig(
+    method='all',
+    weights={'surprise': 0.6, 'implicit': 0.4},
+    surprise_params={'n_factors': 100, 'n_epochs': 20},
+    implicit_params={'factors': 50, 'regularization': 0.01}
+)
+```
+
+## Development
+
+1. Install development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+2. Run tests:
+```bash
+pytest tests/
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run the tests
+5. Submit a pull request
+
+## License
+
+MIT License - feel free to use this code for your own projects.
+
+## Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@software{hybrid_recommender,
+  title = {Hybrid Recommendation Engine},
+  author = {Your Name},
+  year = {2024},
+  url = {https://github.com/yourusername/hybrid-recommender}
+}
+``` 

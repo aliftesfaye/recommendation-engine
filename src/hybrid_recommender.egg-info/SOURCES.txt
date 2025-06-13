@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/hybrid_recommender/__init__.py
+src/hybrid_recommender/config.py
+src/hybrid_recommender/recommender.py
+src/hybrid_recommender.egg-info/PKG-INFO
+src/hybrid_recommender.egg-info/SOURCES.txt
+src/hybrid_recommender.egg-info/dependency_links.txt
+src/hybrid_recommender.egg-info/requires.txt
+src/hybrid_recommender.egg-info/top_level.txt
+tests/test_recommender.py
