@@ -1,15 +1,22 @@
-"""
-Hybrid Recommender System
-========================
+import os
+import sys
+import logging
 
-A sophisticated recommendation engine that combines multiple approaches:
-- Collaborative Filtering (using Surprise)
-- Content-Based Filtering (using LightFM)
-- Implicit Feedback (using Implicit)
-"""
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
-from hybrid_recommender.recommender import AdvancedHybridRecommender
-from hybrid_recommender.config import RecommenderConfig
+log_dir = "logs"
+log_filepath = os.path.join(log_dir,"running_logs.log")
+os.makedirs(log_dir, exist_ok=True)
 
-__version__ = "0.1.0"
-__all__ = ["AdvancedHybridRecommender", "RecommenderConfig"] 
+
+logging.basicConfig(
+    level= logging.INFO,
+    format= logging_str,
+
+    handlers=[
+        logging.FileHandler(log_filepath),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+logger = logging.getLogger("hybridRecommenderLogger")
