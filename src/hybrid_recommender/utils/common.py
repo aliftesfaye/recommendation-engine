@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from hybrid_recommender import logger
+from src.hybrid_recommender import logger
 import json
 import joblib
 from ensure import ensure_annotations
