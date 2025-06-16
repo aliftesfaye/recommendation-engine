@@ -848,3 +848,7 @@ Traceback (most recent call last):
                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
 ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-16 16:14:25,467: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 16:14:25,467: INFO: common: created directory at: artifacts]
+[2025-06-16 16:14:25,467: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 16:14:25,467: INFO: 1823720442: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
