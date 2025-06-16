@@ -17,14 +17,14 @@
 #   name: quality
 
 COLUMNS:
-  ISBN: object
-  Book-Title: object
-  Book-Author: object
-  Year-Of-Publication: int64
-  Publisher: object
-  Image-URL-S: object
-  Image-URL-M: object
-  Image-URL-L: object
+  ISBN: str
+  Book-Title: str
+  Book-Author: str
+  Year-Of-Publication: float64
+  Publisher: str
+  Image-URL-S: str
+  Image-URL-M: str
+  Image-URL-L: str
   User-ID: int64
   Book-Rating: int64
 

@@ -580,3 +580,271 @@ Source-Age: 0
 [2025-06-16 10:35:20,813: INFO: 1284476475: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
 [2025-06-16 10:35:49,574: INFO: 1284476475: Downloaded dataset to: artifacts/data_ingestion/data.zip]
 [2025-06-16 10:35:49,993: INFO: 1284476475: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 14:21:52,479: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 14:21:52,487: INFO: common: created directory at: artifacts]
+[2025-06-16 14:21:52,487: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 14:21:52,491: INFO: 1284476475: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 14:22:16,538: INFO: 1284476475: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 14:22:17,101: INFO: 1284476475: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 14:23:06,007: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 14:23:06,009: INFO: common: created directory at: artifacts]
+[2025-06-16 14:23:06,010: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 14:23:06,010: INFO: 1266010482: File already exists of size: ~ 24903 KB]
+[2025-06-16 14:23:06,795: INFO: 1266010482: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 14:23:06,795: INFO: 1266010482: Reading data files from artifacts/data_ingestion/data]
+[2025-06-16 14:23:09,811: INFO: 1266010482: Books shape: (271360, 8), Ratings shape: (1149780, 3), Users shape: (278858, 3)]
+[2025-06-16 14:23:09,811: INFO: 1266010482: Merging ratings with books...]
+[2025-06-16 14:23:12,801: INFO: 1266010482: Merging with users...]
+[2025-06-16 14:23:13,677: INFO: 1266010482: Merged dataset shape: (1149780, 12)]
+[2025-06-16 14:23:24,759: INFO: 1266010482: Saved merged data to artifacts/data_ingestion\merged_data.csv]
+[2025-06-16 14:42:05,564: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 14:42:05,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 14:42:05,599: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 14:42:05,608: INFO: common: created directory at: artifacts]
+[2025-06-16 14:42:05,614: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-16 15:06:56,853: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:06:56,853: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 15:06:56,853: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 15:06:56,863: INFO: common: created directory at: artifacts]
+[2025-06-16 15:06:56,864: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-16 15:24:24,231: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:24:24,239: INFO: common: created directory at: artifacts]
+[2025-06-16 15:24:24,239: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:24:24,243: INFO: 1266010482: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:26:28,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:26:28,724: INFO: common: created directory at: artifacts]
+[2025-06-16 15:26:28,724: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:26:28,724: INFO: 1266010482: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:27:02,440: INFO: 1266010482: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 15:27:02,839: INFO: 1266010482: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 15:27:02,839: INFO: 1266010482: Reading data files from artifacts/data_ingestion/data]
+[2025-06-16 15:27:04,918: INFO: 1266010482: Books shape: (271360, 8), Ratings shape: (1149780, 3), Users shape: (278858, 3)]
+[2025-06-16 15:27:04,918: INFO: 1266010482: Merging ratings with books...]
+[2025-06-16 15:27:05,552: INFO: 1266010482: Merging with users...]
+[2025-06-16 15:27:05,992: INFO: 1266010482: Merged dataset shape: (1149780, 12)]
+[2025-06-16 15:27:14,077: INFO: 1266010482: Saved merged data to artifacts/data_ingestion\merged_data.csv]
+[2025-06-16 15:30:52,698: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:30:52,698: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 15:30:52,706: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 15:30:52,706: INFO: common: created directory at: artifacts]
+[2025-06-16 15:30:52,706: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-16 15:38:44,662: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:38:44,675: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 15:38:44,684: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 15:38:44,689: INFO: common: created directory at: artifacts]
+[2025-06-16 15:38:44,690: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-16 15:41:06,876: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:41:06,876: INFO: common: created directory at: artifacts]
+[2025-06-16 15:41:06,876: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:41:06,876: INFO: 2369448649: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:41:59,017: INFO: 2369448649: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 15:41:59,401: INFO: 2369448649: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 15:41:59,401: INFO: 2369448649: Reading data files with specified dtypes...]
+[2025-06-16 15:42:00,605: ERROR: 2369448649: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_20696\2369448649.py", line 76, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-16 15:48:29,054: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:48:29,054: INFO: common: created directory at: artifacts]
+[2025-06-16 15:48:29,054: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:48:29,065: INFO: 86415195: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:49:31,291: INFO: 86415195: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 15:49:31,641: INFO: 86415195: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 15:49:31,641: INFO: 86415195: Reading data files with specified dtypes...]
+[2025-06-16 15:49:32,991: ERROR: 86415195: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_21448\86415195.py", line 76, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-16 15:54:13,128: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:54:13,128: INFO: common: created directory at: artifacts]
+[2025-06-16 15:54:13,128: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:54:13,128: INFO: 2410516760: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:54:45,053: INFO: 2410516760: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 15:54:45,416: INFO: 2410516760: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 15:54:45,416: INFO: 2410516760: Reading data files with specified dtypes...]
+[2025-06-16 15:54:46,451: ERROR: 2410516760: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_19640\2410516760.py", line 75, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-16 15:57:37,263: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 15:57:37,264: INFO: common: created directory at: artifacts]
+[2025-06-16 15:57:37,266: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 15:57:37,266: INFO: 2410516760: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 15:57:57,225: INFO: 2410516760: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 15:57:57,711: INFO: 2410516760: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 15:57:57,720: INFO: 2410516760: Reading data files with specified dtypes...]
+[2025-06-16 15:57:58,824: ERROR: 2410516760: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_22768\2410516760.py", line 75, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-16 16:03:02,542: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 16:03:02,542: INFO: common: created directory at: artifacts]
+[2025-06-16 16:03:02,542: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 16:03:02,542: INFO: 1319989155: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-16 16:03:26,483: INFO: 1319989155: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-16 16:03:26,829: INFO: 1319989155: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-16 16:03:26,829: INFO: 1319989155: Reading data files with specified dtypes...]
+[2025-06-16 16:03:27,849: ERROR: 1319989155: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_15448\1319989155.py", line 82, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
