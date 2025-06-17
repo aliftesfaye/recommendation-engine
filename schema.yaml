@@ -20,13 +20,15 @@ COLUMNS:
   ISBN: str
   Book-Title: str
   Book-Author: str
-  Year-Of-Publication: float64
+  Year-Of-Publication: Int32
   Publisher: str
   Image-URL-S: str
   Image-URL-M: str
   Image-URL-L: str
-  User-ID: int64
-  Book-Rating: int64
+  User-ID: Int32
+  Book-Rating: Int8
+  Age: Int32
+  Location: str
 
 TARGET_COLUMN:
   name: Book-Rating

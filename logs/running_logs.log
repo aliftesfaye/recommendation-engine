@@ -852,3 +852,463 @@ ValueError: Unable to parse string "DK Publishing Inc" at position 12930
 [2025-06-16 16:14:25,467: INFO: common: created directory at: artifacts]
 [2025-06-16 16:14:25,467: INFO: common: created directory at: artifacts/data_ingestion]
 [2025-06-16 16:14:25,467: INFO: 1823720442: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-17 04:57:01,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 04:57:01,419: INFO: common: created directory at: artifacts]
+[2025-06-17 04:57:01,419: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 04:57:01,424: INFO: 2799517757: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-17 04:57:06,524: INFO: 2799517757: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-17 04:57:07,078: INFO: 2799517757: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 04:57:07,078: INFO: 2799517757: Reading data files with specified dtypes...]
+[2025-06-17 04:57:08,752: ERROR: 2799517757: Error in merge_data: Unable to parse string "DK Publishing Inc" at position 12930]
+Traceback (most recent call last):
+  File "pandas/_libs/lib.pyx", line 2407, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_15632\2799517757.py", line 80, in merge_data
+    books_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 283, in _from_sequence_of_strings
+    scalars = to_numeric(strings, errors="raise", dtype_backend="numpy_nullable")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\tools\numeric.py", line 235, in to_numeric
+    values, new_mask = lib.maybe_convert_numeric(  # type: ignore[call-overload]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 2449, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "DK Publishing Inc" at position 12930
+[2025-06-17 05:03:05,253: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:03:05,260: INFO: common: created directory at: artifacts]
+[2025-06-17 05:03:05,261: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:03:05,261: INFO: 3081445773: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:03:05,869: INFO: 3081445773: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:07:27,091: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:07:27,093: INFO: common: created directory at: artifacts]
+[2025-06-17 05:07:27,095: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:07:27,095: INFO: 3955689425: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:07:27,686: INFO: 3955689425: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:09:33,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:09:33,402: INFO: common: created directory at: artifacts]
+[2025-06-17 05:09:33,405: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:09:33,405: INFO: 3730285608: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:09:34,086: INFO: 3730285608: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:11:06,631: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:11:06,639: INFO: common: created directory at: artifacts]
+[2025-06-17 05:11:06,639: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:11:06,639: INFO: 381861995: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:11:07,226: INFO: 381861995: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:11:07,226: INFO: 381861995: Reading books data from: artifacts/data_ingestion/data\Books.csv]
+[2025-06-17 05:14:02,825: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:14:02,833: INFO: common: created directory at: artifacts]
+[2025-06-17 05:14:02,833: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:14:02,833: INFO: 2408275676: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:14:03,451: INFO: 2408275676: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:14:03,451: INFO: 2408275676: Reading books data from: artifacts/data_ingestion/data\Books.csv]
+[2025-06-17 05:15:35,196: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:15:35,196: INFO: common: created directory at: artifacts]
+[2025-06-17 05:15:35,204: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:15:35,204: INFO: 2759669161: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:15:35,738: INFO: 2759669161: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:15:35,738: INFO: 2759669161: Reading books data from: artifacts/data_ingestion/data\Books.csv]
+[2025-06-17 05:15:37,999: INFO: 2759669161: Reading data files with specified dtypes...]
+[2025-06-17 05:15:42,821: ERROR: 2759669161: Error in merge_data: cannot safely cast non-equivalent float64 to int8]
+Traceback (most recent call last):
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\integer.py", line 53, in _safe_cast
+    return values.astype(dtype, casting="safe", copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cannot cast array data from dtype('float64') to dtype('int8') according to the rule 'safe'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_17304\2759669161.py", line 142, in merge_data
+    users_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 284, in _from_sequence_of_strings
+    return cls._from_sequence(scalars, dtype=dtype, copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\masked.py", line 153, in _from_sequence
+    values, mask = cls._coerce_to_array(scalars, dtype=dtype, copy=copy)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 272, in _coerce_to_array
+    values, mask, _, _ = _coerce_to_data_and_mask(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 229, in _coerce_to_data_and_mask
+    values = dtype_cls._safe_cast(values, dtype, copy=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\integer.py", line 59, in _safe_cast
+    raise TypeError(
+TypeError: cannot safely cast non-equivalent float64 to int8
+[2025-06-17 05:16:44,262: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:16:44,262: INFO: common: created directory at: artifacts]
+[2025-06-17 05:16:44,270: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:16:44,270: INFO: 3946546995: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:16:44,829: INFO: 3946546995: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:17:18,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:17:18,131: INFO: common: created directory at: artifacts]
+[2025-06-17 05:17:18,131: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:17:18,141: INFO: 3946546995: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:17:18,811: INFO: 3946546995: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:17:18,811: INFO: 3946546995: Reading data files with specified dtypes...]
+[2025-06-17 05:17:23,590: ERROR: 3946546995: Error in merge_data: cannot safely cast non-equivalent float64 to int8]
+Traceback (most recent call last):
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\integer.py", line 53, in _safe_cast
+    return values.astype(dtype, casting="safe", copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cannot cast array data from dtype('float64') to dtype('int8') according to the rule 'safe'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_18664\3946546995.py", line 92, in merge_data
+    users_df = pd.read_csv(
+               ^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 921, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1066, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1105, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1211, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 284, in _from_sequence_of_strings
+    return cls._from_sequence(scalars, dtype=dtype, copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\masked.py", line 153, in _from_sequence
+    values, mask = cls._coerce_to_array(scalars, dtype=dtype, copy=copy)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 272, in _coerce_to_array
+    values, mask, _, _ = _coerce_to_data_and_mask(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\numeric.py", line 229, in _coerce_to_data_and_mask
+    values = dtype_cls._safe_cast(values, dtype, copy=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arrays\integer.py", line 59, in _safe_cast
+    raise TypeError(
+TypeError: cannot safely cast non-equivalent float64 to int8
+[2025-06-17 05:18:15,617: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:18:15,617: INFO: common: created directory at: artifacts]
+[2025-06-17 05:18:15,625: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:18:15,625: INFO: 2255970579: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:18:16,167: INFO: 2255970579: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:18:16,167: INFO: 2255970579: Reading data files with specified dtypes...]
+[2025-06-17 05:18:20,227: INFO: 2255970579: Cleaning data...]
+[2025-06-17 05:18:20,284: ERROR: 2255970579: Error in merge_data: '>=' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_20800\2255970579.py", line 101, in merge_data
+    books_df['Year-Of-Publication'] = books_df['Year-Of-Publication'].clip(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 9117, in clip
+    return self._clip_with_scalar(lower, upper, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 8857, in _clip_with_scalar
+    cond = mask | (self >= lower)
+                   ^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 344, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 129, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>=' not supported between instances of 'str' and 'int'
+[2025-06-17 05:21:45,905: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:21:45,905: INFO: common: created directory at: artifacts]
+[2025-06-17 05:21:45,905: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:21:45,905: INFO: 4170389737: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:21:46,654: INFO: 4170389737: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:21:46,654: INFO: 4170389737: Reading data files with specified dtypes...]
+[2025-06-17 05:21:51,221: INFO: 4170389737: Cleaning data...]
+[2025-06-17 05:21:51,237: ERROR: 4170389737: Error in merge_data: '>=' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_19956\4170389737.py", line 101, in merge_data
+    books_df['Year-Of-Publication'] = books_df['Year-Of-Publication'].clip(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 9117, in clip
+    return self._clip_with_scalar(lower, upper, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 8857, in _clip_with_scalar
+    cond = mask | (self >= lower)
+                   ^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 344, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 129, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>=' not supported between instances of 'str' and 'int'
+[2025-06-17 05:26:21,394: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:26:21,394: INFO: common: created directory at: artifacts]
+[2025-06-17 05:26:21,394: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:26:21,394: INFO: 2066201408: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:26:22,031: INFO: 2066201408: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:26:22,031: INFO: 2066201408: Reading data files with specified dtypes...]
+[2025-06-17 05:26:26,447: INFO: 2066201408: Cleaning data...]
+[2025-06-17 05:26:26,721: WARNING: 2066201408: Cleaned 3 invalid publication years]
+[2025-06-17 05:26:26,737: ERROR: 2066201408: Error in merge_data: '>=' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_13676\2066201408.py", line 119, in merge_data
+    users_df['Age'] = users_df['Age'].clip(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 9117, in clip
+    return self._clip_with_scalar(lower, upper, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\generic.py", line 8857, in _clip_with_scalar
+    cond = mask | (self >= lower)
+                   ^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\series.py", line 6130, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 344, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\ops\array_ops.py", line 129, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/ops.pyx", line 107, in pandas._libs.ops.scalar_compare
+TypeError: '>=' not supported between instances of 'str' and 'int'
+[2025-06-17 05:31:02,416: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:31:02,416: INFO: common: created directory at: artifacts]
+[2025-06-17 05:31:02,416: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:31:02,424: INFO: 1739755337: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:31:03,091: INFO: 1739755337: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:31:03,091: INFO: 1739755337: Reading data files with specified dtypes...]
+[2025-06-17 05:31:07,382: INFO: 1739755337: Cleaning data...]
+[2025-06-17 05:31:07,609: WARNING: 1739755337: Cleaned 3 invalid publication years]
+[2025-06-17 05:31:08,129: INFO: 1739755337: Merging datasets...]
+[2025-06-17 05:31:09,834: ERROR: 1739755337: Error in merge_data: Merge keys are not unique in right dataset; not a many-to-one merge]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_5688\1739755337.py", line 131, in merge_data
+    book_ratings = pd.merge(
+                   ^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 170, in merge
+    op = _MergeOperation(
+         ^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 813, in __init__
+    self._validate_validate_kwd(validate)
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 1669, in _validate_validate_kwd
+    raise MergeError(
+pandas.errors.MergeError: Merge keys are not unique in right dataset; not a many-to-one merge
+[2025-06-17 05:34:16,782: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:34:16,790: INFO: common: created directory at: artifacts]
+[2025-06-17 05:34:16,790: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:34:16,790: INFO: 3266401565: File already exists of size: ~ 24903 KB]
+[2025-06-17 05:34:17,385: INFO: 3266401565: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:34:17,385: INFO: 3266401565: Reading data files with specified dtypes...]
+[2025-06-17 05:34:21,654: INFO: 3266401565: Cleaning data...]
+[2025-06-17 05:34:22,719: INFO: 3266401565: Removed 0 duplicate books]
+[2025-06-17 05:34:22,719: INFO: 3266401565: Merging datasets...]
+[2025-06-17 05:34:26,541: INFO: 3266401565: Final merged dataset shape: (1031139, 11)]
+[2025-06-17 05:34:35,105: INFO: 3266401565: Saved cleaned merged data to artifacts/data_ingestion\merged_data.csv]
+[2025-06-17 05:35:06,031: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:35:06,031: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 05:35:06,062: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 05:35:06,062: INFO: common: created directory at: artifacts]
+[2025-06-17 05:35:06,062: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-17 05:42:44,815: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:42:44,823: INFO: common: created directory at: artifacts]
+[2025-06-17 05:42:44,823: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:42:44,823: INFO: 4073022898: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-17 05:42:49,113: INFO: 4073022898: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-17 05:42:49,730: INFO: 4073022898: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:42:49,730: INFO: 4073022898: Reading data files with specified dtypes...]
+[2025-06-17 05:42:53,809: INFO: 4073022898: Cleaning data...]
+[2025-06-17 05:42:54,923: INFO: 4073022898: Removed 0 duplicate books]
+[2025-06-17 05:42:54,924: INFO: 4073022898: Merging datasets...]
+[2025-06-17 05:42:57,374: ERROR: 4073022898: Error in merge_data: You are trying to merge on Int32 and object columns for key 'User-ID'. If you wish to proceed you should use pd.concat]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_6380\4073022898.py", line 136, in merge_data
+    final_df = pd.merge(
+               ^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 170, in merge
+    op = _MergeOperation(
+         ^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 807, in __init__
+    self._maybe_coerce_merge_keys()
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\pandas\core\reshape\merge.py", line 1508, in _maybe_coerce_merge_keys
+    raise ValueError(msg)
+ValueError: You are trying to merge on Int32 and object columns for key 'User-ID'. If you wish to proceed you should use pd.concat
+[2025-06-17 05:43:51,801: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:43:51,801: INFO: common: created directory at: artifacts]
+[2025-06-17 05:43:51,805: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 05:43:51,805: INFO: 3266401565: Downloading dataset from Kaggle: arashnic/book-recommendation-dataset]
+[2025-06-17 05:44:16,830: INFO: 3266401565: Downloaded dataset to: artifacts/data_ingestion/data.zip]
+[2025-06-17 05:44:17,454: INFO: 3266401565: Extracted data to: artifacts/data_ingestion/data]
+[2025-06-17 05:44:17,454: INFO: 3266401565: Reading data files with specified dtypes...]
+[2025-06-17 05:44:21,728: INFO: 3266401565: Cleaning data...]
+[2025-06-17 05:44:22,811: INFO: 3266401565: Removed 0 duplicate books]
+[2025-06-17 05:44:22,811: INFO: 3266401565: Merging datasets...]
+[2025-06-17 05:44:26,353: INFO: 3266401565: Final merged dataset shape: (1031139, 11)]
+[2025-06-17 05:44:34,159: INFO: 3266401565: Saved cleaned merged data to artifacts/data_ingestion\merged_data.csv]
+[2025-06-17 05:45:25,206: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:45:25,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 05:45:25,220: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 05:45:25,220: INFO: common: created directory at: artifacts]
+[2025-06-17 05:45:25,220: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-17 05:48:47,814: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 05:48:47,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 05:48:47,823: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 05:48:47,833: INFO: common: created directory at: artifacts]
+[2025-06-17 05:48:47,833: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-17 05:49:06,889: INFO: 2148425976: Splited data into training and test sets]
+[2025-06-17 05:49:06,889: INFO: 2148425976: (773354, 11)]
+[2025-06-17 05:49:06,889: INFO: 2148425976: (257785, 11)]
+[2025-06-17 06:10:09,038: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 06:10:09,040: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 06:10:09,045: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 06:10:09,046: INFO: common: created directory at: artifacts]
+[2025-06-17 06:10:09,054: ERROR: 1711784427: Error in training hybrid recommender]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'hybrid_recommender'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'hybrid_recommender'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'hybrid_recommender'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'hybrid_recommender'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'hybrid_recommender'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'hybrid_recommender'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'hybrid_recommender'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_10832\1711784427.py", line 3, in <module>
+    recommender_config = config.get_hybrid_recommender_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_10832\3614958655.py", line 15, in get_hybrid_recommender_config
+    config = self.config.hybrid_recommender
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'hybrid_recommender'"
+[2025-06-17 06:17:11,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 06:17:12,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 06:17:12,011: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 06:17:12,012: INFO: common: created directory at: artifacts]
+[2025-06-17 06:17:12,012: ERROR: 1711784427: Error in training hybrid recommender]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_6496\1711784427.py", line 3, in <module>
+    recommender_config = config.get_hybrid_recommender_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_hybrid_recommender_config'
+[2025-06-17 06:18:08,873: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 06:18:08,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 06:18:08,885: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 06:18:08,886: INFO: common: created directory at: artifacts]
+[2025-06-17 06:18:08,887: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-17 06:18:13,370: ERROR: 1169397994: Error in training hybrid recommender]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_12492\1169397994.py", line 5, in <module>
+    recommender.train()
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_12492\2461798883.py", line 76, in train
+    user_items = coo_matrix(
+                 ^^^^^^^^^^
+NameError: name 'coo_matrix' is not defined
+[2025-06-17 06:21:36,164: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 06:21:36,166: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 06:21:36,166: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 06:21:36,166: INFO: common: created directory at: artifacts]
+[2025-06-17 06:21:36,171: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-17 06:21:40,506: INFO: 1614537693: Training implicit ALS model...]
+[2025-06-17 06:21:46,308: INFO: 1614537693: Training neural network hybrid model...]
