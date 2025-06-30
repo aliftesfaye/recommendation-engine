@@ -1,14 +1,10 @@
 COLUMNS:
-  ISBN: str
-  Book-Title: str
-  Book-Author: str
-  Year-Of-Publication: Int32
-  Publisher: str
-  Image-URL-S: str
-  Image-URL-M: str
-  Image-URL-L: str
-  User-ID: Int32
-  Book-Rating: Int8
-  Age: Int32
-  Location: str
-
+  user_id: UUID               
+  event_id: UUID               
+  organizer_id: UUID           
+  is_booked: Int8               
+  num_bookings: Int32           
+  is_liked: Int8               
+  num_likes: Int32             
+  is_commented: Int8            
+  num_comments: Int32  
