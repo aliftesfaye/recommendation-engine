@@ -1464,3 +1464,208 @@ NameError: name 'coo_matrix' is not defined
 [2025-06-30 16:42:47,060: INFO: 2148425976: Splited data into training and test sets]
 [2025-06-30 16:42:47,061: INFO: 2148425976: (150000, 9)]
 [2025-06-30 16:42:47,061: INFO: 2148425976: (50000, 9)]
+[2025-06-30 21:44:10,588: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 21:44:10,622: INFO: common: created directory at: artifacts]
+[2025-06-30 21:44:10,622: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-30 21:44:10,622: INFO: 964962886: Generating enhanced data to: artifacts/data_ingestion/generated_data]
+[2025-06-30 21:44:16,333: INFO: 964962886: Generated enhanced datasets with:]
+[2025-06-30 21:44:16,349: INFO: 964962886: - Bookings: 150000 (Target: 150000)]
+[2025-06-30 21:44:16,349: INFO: 964962886: - Comments: 245397 (Target: 200000)]
+[2025-06-30 21:44:16,349: INFO: 964962886: - Likes: 145397]
+[2025-06-30 21:44:16,349: INFO: 964962886: - Full interactions: 30000 events]
+[2025-06-30 21:47:14,730: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 21:47:14,744: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 21:47:14,751: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-30 21:47:14,753: INFO: common: created directory at: artifacts]
+[2025-06-30 21:47:14,753: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-30 21:48:07,455: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 21:48:07,456: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 21:48:07,456: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-30 21:48:07,456: INFO: common: created directory at: artifacts]
+[2025-06-30 21:48:07,456: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-30 21:48:09,973: INFO: 2148425976: Splited data into training and test sets]
+[2025-06-30 21:48:09,973: INFO: 2148425976: (150000, 9)]
+[2025-06-30 21:48:09,973: INFO: 2148425976: (50000, 9)]
+[2025-06-30 22:40:06,362: ERROR: 1169397994: Error in training hybrid recommender]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_18880\1169397994.py", line 2, in <module>
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_18880\841886489.py", line 8, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\recommendation-engine\src\hybrid_recommender\utils\common.py", line 36, in read_yaml
+    raise e
+  File "d:\recommendation-engine\src\hybrid_recommender\utils\common.py", line 29, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2025-06-30 22:41:12,345: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 22:41:12,354: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 22:41:12,354: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-30 22:41:12,354: INFO: common: created directory at: artifacts]
+[2025-06-30 22:41:12,354: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-30 22:41:12,658: INFO: 2464951380: Training implicit ALS model...]
+[2025-06-30 22:41:13,820: INFO: 2464951380: Training neural network hybrid model...]
+[2025-06-30 22:47:13,070: INFO: 2464951380: Saving models...]
+[2025-06-30 22:47:13,070: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-06-30 22:47:13,430: INFO: 2464951380: Training completed!]
+[2025-06-30 22:50:47,197: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 23:06:37,066: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:06:37,067: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:06:37,067: INFO: common: created directory at: artifacts]
+[2025-06-30 23:06:37,067: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-30 23:06:37,067: ERROR: 1754327610: Error during model evaluation]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'implicit_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'implicit_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'implicit_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'implicit_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'implicit_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'implicit_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'implicit_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_18028\1754327610.py", line 3, in <module>
+    model_evaluation_config = config.get_model_evaluation_config()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_18028\3156079477.py", line 20, in get_model_evaluation_config
+    implicit_model_path=config.implicit_model_path,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'implicit_model_path'"
+[2025-06-30 23:11:18,351: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:11:18,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:11:18,359: INFO: common: created directory at: artifacts]
+[2025-06-30 23:11:18,359: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-30 23:11:18,359: ERROR: 1754327610: Error during model evaluation]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'metrics_file_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'metrics_file_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'metrics_file_name'. Did you mean: 'metric_file_name'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'metrics_file_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'metrics_file_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'metrics_file_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'metrics_file_name'. Did you mean: 'metric_file_name'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_21608\1754327610.py", line 3, in <module>
+    model_evaluation_config = config.get_model_evaluation_config()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_21608\3156079477.py", line 25, in get_model_evaluation_config
+    metrics_file_name=config.metrics_file_name,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'metrics_file_name'". Did you mean: 'metric_file_name'?
+[2025-06-30 23:12:39,373: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:12:39,375: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:12:39,376: INFO: common: created directory at: artifacts]
+[2025-06-30 23:12:39,377: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-30 23:12:39,520: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 23:12:39,778: ERROR: 1754327610: Error during model evaluation]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_4072\1754327610.py", line 5, in <module>
+    evaluator.save_results()
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_4072\548256017.py", line 157, in save_results
+    metrics = self.evaluate_recommendations(test_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_4072\548256017.py", line 39, in evaluate_recommendations
+    'coverage': self.calculate_coverage(test_data),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_4072\548256017.py", line 98, in calculate_coverage
+    recommended_events.update(self._recommend(user_id))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_4072\548256017.py", line 121, in _recommend
+    implicit_recs = self.implicit_model.recommend(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\newst\miniconda3\envs\recommendation-engine-env\Lib\site-packages\implicit\cpu\matrix_factorization_base.py", line 46, in recommend
+    raise ValueError("user_items needs to be a CSR sparse matrix")
+ValueError: user_items needs to be a CSR sparse matrix
+[2025-06-30 23:18:58,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:18:58,500: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:18:58,502: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-30 23:18:58,503: INFO: common: created directory at: artifacts]
+[2025-06-30 23:18:58,503: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-30 23:18:58,787: INFO: 302607816: Training implicit ALS model...]
+[2025-06-30 23:18:59,320: INFO: 302607816: Training neural network hybrid model...]
+[2025-06-30 23:24:33,390: INFO: 302607816: Saving models...]
+[2025-06-30 23:24:33,396: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-06-30 23:24:33,508: INFO: 302607816: Training completed!]
+[2025-06-30 23:24:33,591: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
