@@ -1669,3 +1669,19 @@ ValueError: user_items needs to be a CSR sparse matrix
 [2025-06-30 23:24:33,396: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
 [2025-06-30 23:24:33,508: INFO: 302607816: Training completed!]
 [2025-06-30 23:24:33,591: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 23:24:58,207: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:24:58,219: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:24:58,220: INFO: common: created directory at: artifacts]
+[2025-06-30 23:24:58,222: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-30 23:24:58,355: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 23:50:02,175: ERROR: 1754327610: Error during model evaluation]
+Traceback (most recent call last):
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_12872\1754327610.py", line 5, in <module>
+    evaluator.save_results()
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_12872\764056707.py", line 160, in save_results
+    metrics = self.evaluate_recommendations(test_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newst\AppData\Local\Temp\ipykernel_12872\764056707.py", line 60, in evaluate_recommendations
+    if (metrics['precision@k'] + metrics['recall@k']) > 0 else 0
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'list' and 'int'
